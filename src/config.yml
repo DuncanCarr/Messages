@@ -1,5 +1,9 @@
 #Keep the quotes or the plugin will not work!!
 FistJoin_message: '&a<player> has joined for the first time!!'
 #The message that displays the first time a player joins
-Join_Message: '&e<player> has joined the server!!'
+Join_Message: '&4<player> has joined the server!!'
 #The message that displays whenever the player joins that has joined before.
+Send_Quit_Message: true
+#Whether or not to send a message when a player quits the server.
+Quit_Message: '&1<player> has left the server'
+#The message the plugin will send if Send_Quit_Messages is true.
