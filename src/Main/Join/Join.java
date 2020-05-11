@@ -24,11 +24,22 @@ public class Join implements Listener {
         @EventHandler
         public void onJoin(PlayerJoinEvent e) {
         	Player p = e.getPlayer();
+        	Boolean b = plugin.getConfig().getBoolean("Send_First_Join_Message");
+        	Boolean c = plugin.getConfig().getBoolean("Send_Join_Message");
         	
+        	if (b == true) {
         	if (!p.hasPlayedBefore()) {
-        		e.setJoinMessage(Utils.chat(plugin.getConfig().getString("FirstJoin_Message").replace("<player>", p.getName()))); 
+        		e.setJoinMessage(Utils.chat(plugin.getConfig().getString("FirstJoin_Message").replace("<player>", p.getName())));
+        	}
         	} else {
+        		e.setJoinMessage("");
+        	}
+        	if (c == true) {
+        	if (p.hasPlayedBefore()) {
         		e.setJoinMessage(Utils.chat(plugin.getConfig().getString("Join_Message").replace("<player>", p.getName())));
+        	} 
+        	} else {
+        		e.setJoinMessage("");
         	}
         }
         @EventHandler
