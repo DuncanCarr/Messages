@@ -1,4 +1,8 @@
 #Keep the quotes or the plugin will not work!!
+Send_First_Join_Message: true
+#whether or not to send a message when the player first joins the server
+Send_Join_Message: true
+#Whether or not to send a message when a player joins that has already joined in the past.
 FistJoin_message: '&a<player> has joined for the first time!!'
 #The message that displays the first time a player joins
 Join_Message: '&4<player> has joined the server!!'
