@@ -11,3 +11,11 @@ Send_Quit_Message: true
 #Whether or not to send a message when a player quits the server.
 Quit_Message: '&1<player> has left the server'
 #The message the plugin will send if Send_Quit_Messages is true.
+Send_Killer_Message: true
+#Whether or not to send the killer of a player a message
+Killer_Message: '&4You have killed <DeadPlayer>!!'
+#Message that it sends the killer of a player
+Send_Death_Message: true
+#Whether or not to send the player a death message.
+Death_Message: '&0You have been killed by <Killer>'
+#The message to send a player when they are killed.
