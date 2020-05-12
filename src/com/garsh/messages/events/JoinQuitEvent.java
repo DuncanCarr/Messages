@@ -49,7 +49,7 @@ public class JoinQuitEvent implements Listener {
         boolean sendQuit = plugin.getConfig().getBoolean("SEND_QUIT");
 
         if (sendQuit) {
-        	e.setQuitMessage(plugin.colorize(plugin.getConfig().getString("QUIT_MESSAGE")));
+        	e.setQuitMessage(plugin.colorize(plugin.getConfig().getString("QUIT_MESSAGE").replace("{PLAYER}", p.getName())));
 		} else {
         	e.setQuitMessage(null);
 		}
