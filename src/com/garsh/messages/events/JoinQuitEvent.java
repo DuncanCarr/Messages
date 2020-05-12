@@ -32,10 +32,9 @@ public class JoinQuitEvent implements Listener {
 
 		// if(sendJoin == true) {}, but simpler
 		if (sendJoin) {
-			// Loop through all online players
-			for (Player online : Bukkit.getOnlinePlayers()) {
-				online.sendMessage(plugin.colorize(plugin.getConfig().getString("JOIN_MESSAGE").replace("{PLAYER}", p.getName())));
-			}
+			e.setJoinMessage(plugin.colorize(plugin.getConfig().getString("JOIN_MESSAGE")));
+		} else {
+			e.setJoinMessage(null);
 		}
 	}
 
@@ -48,9 +47,9 @@ public class JoinQuitEvent implements Listener {
         boolean sendQuit = plugin.getConfig().getBoolean("SEND_QUIT");
 
         if (sendQuit) {
-        	for (Player online : Bukkit.getOnlinePlayers()) {
-        		online.sendMessage(plugin.colorize(plugin.getConfig().getString("QUIT_MESSAGE").replace("{PLAYER}", p.getName())));
-			}
+        	e.setQuitMessage(plugin.colorize(plugin.getConfig().getString("QUIT_MESSAGE")));
+		} else {
+        	e.setQuitMessage(null);
 		}
 	}
 }
