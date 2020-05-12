@@ -24,25 +24,20 @@ public class JoinQuitEvent implements Listener {
 
 		// if(sendFirstJoin == true) {}, but simpler
 		if (!p.hasPlayedBefore()) {
-		if (sendFirstJoin) {
-			// Loop through all online players
-			for (Player online : Bukkit.getOnlinePlayers()) {
-				online.sendMessage(plugin.colorize(plugin.getConfig().getString("FIRST_JOIN_MESSAGE").replace("{PLAYER}", p.getName())));
-				e.setJoinMessage("");
+			if (sendFirstJoin) {
+				// Loop through all online players
+				for (Player online : Bukkit.getOnlinePlayers()) {
+					online.sendMessage(plugin.colorize(plugin.getConfig().getString("FIRST_JOIN_MESSAGE").replace("{PLAYER}", p.getName())));
+				}
 			}
-		} else {
-			e.setJoinMessage("");
-		}
 		}
 
-		// if(sendJoin == true) {}, but simpler
-		if (p.hasPlayedBefore()) {
 		if (sendJoin) {
 			e.setJoinMessage(plugin.colorize(plugin.getConfig().getString("JOIN_MESSAGE")));
 		} else {
 			e.setJoinMessage(null);
 		}
-	}
+
 	}
 
 	// These events are part of different constructors, so you can have the same variables.
