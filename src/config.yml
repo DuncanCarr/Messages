@@ -1,21 +1,23 @@
-#Keep the quotes or the plugin will not work!!
-Send_First_Join_Message: true
-#whether or not to send a message when the player first joins the server
-Send_Join_Message: true
-#Whether or not to send a message when a player joins that has already joined in the past.
-FistJoin_message: '&a<player> has joined for the first time!!'
-#The message that displays the first time a player joins
-Join_Message: '&4<player> has joined the server!!'
-#The message that displays whenever the player joins that has joined before.
-Send_Quit_Message: true
-#Whether or not to send a message when a player quits the server.
-Quit_Message: '&1<player> has left the server'
-#The message the plugin will send if Send_Quit_Messages is true.
-Send_Killer_Message: true
-#Whether or not to send the killer of a player a message
-Killer_Message: '&4You have killed <DeadPlayer>!!'
-#Message that it sends the killer of a player
-Send_Death_Message: true
-#Whether or not to send the player a death message.
-Death_Message: '&0You have been killed by <Killer>'
-#The message to send a player when they are killed.
+# Should the death message be sent?
+SEND_DEATH_MESSAGE: true
+
+# What is the death message?
+DEATH_MESSAGE: "&e{DIED} &chas been killed by &e{KILLER}&c!"
+
+# Should the first join message be sent?
+SEND_FIRST_JOIN: true
+
+# What is the first join message?
+FIRST_JOIN_MESSAGE: "&e{PLAYER} has joined the server for the first time! Welcome them!"
+
+# Should the regular join message be sent?
+SEND_JOIN: true
+
+# What is the join message?
+JOIN_MESSAGE: "&e{PLAYER} has joined the server!"
+
+# Should the quit message be sent?
+SEND_QUIT: true
+
+# What is the quit message?
+QUIT_MESSAGE: "&e{PLAYER} has left the server!"
