@@ -1,5 +1,10 @@
 name: Messages
-version: 2
+version: "2.0"
 author: garsh1
-main: Main.Main
-description: Change the messages of Minecraft with this lightweight and simple plugin!!
+main: com.garsh.messages.MessagesPlugin
+description: Change the messages of Minecraft with this lightweight and simple plugin!
+
+commands:
+  messages:
+    usage: /messages
+    description: Reload the configuration file
