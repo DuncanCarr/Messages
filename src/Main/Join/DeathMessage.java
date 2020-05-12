@@ -6,8 +6,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
-import me.garsh1.Test.Main;
-import me.garsh1.Test.Utils.Utils;
+import me.garsh1.Main.Main;
+import me.garsh1.Main.Utils.Utils;
 
 public class DeathMessage implements Listener {
 	
