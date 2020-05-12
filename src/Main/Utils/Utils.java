@@ -1,4 +1,4 @@
-package me.garsh1.Test.Utils;
+package me.garsh1.Main.Utils;
 
 import org.bukkit.ChatColor;
 
