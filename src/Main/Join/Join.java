@@ -7,8 +7,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import me.garsh1.Test.Main;
-import me.garsh1.Test.Utils.Utils;
+import me.garsh1.Main.Main;
+import me.garsh1.Main.Utils.Utils;
 
 public class Join implements Listener {
 	
