@@ -1,4 +1,4 @@
-package me.garsh1.Test;
+package me.garsh1.Main;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
